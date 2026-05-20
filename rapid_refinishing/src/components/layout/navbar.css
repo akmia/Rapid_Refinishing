@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LEFT */
+.navbar-logo {
+  flex: 1;
+}
+
+.navbar-logo img {
+  height: 48px;
+  object-fit: contain;
+}
+
+/* CENTER */
+.nav-links {
+  flex: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a,
+.dropdown-trigger {
+  text-decoration: none;
+  color: #2B3B98;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.dropdown-trigger:hover {
+  color: #1d2a70;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+
+  background: white;
+  min-width: 220px;
+
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+
+  padding: 0.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  padding: 0.7rem 1rem;
+  font-size: 0.88rem;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f6ff;
+}
+
+/* RIGHT */
+.navbar-contact {
+  flex: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 0.75rem;
+}
+
+.navbar-contact a {
+  text-decoration: none;
+  color: #666;
+  white-space: nowrap;
+}
+
+.navbar-contact a:hover {
+  color: #2B3B98;
+}

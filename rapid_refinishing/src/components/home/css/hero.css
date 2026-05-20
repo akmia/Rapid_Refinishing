@@ -1,0 +1,107 @@
+/* HERO SECTION */
+
+.hero {
+  height: 90vh;
+  min-height: 700px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENT WRAPPER */
+.hero-content {
+  max-width: 650px;
+  margin-left: 5rem;
+
+  color: white;
+}
+
+/* HEADING */
+.hero-content h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+
+  margin-bottom: 1.5rem;
+
+  letter-spacing: -2px;
+}
+
+/* PARAGRAPH */
+.hero-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+
+  margin-bottom: 2rem;
+
+  color: rgba(255,255,255,0.92);
+}
+
+/* BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background: #2B3B98;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 1rem 1.8rem;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.primary-btn:hover {
+  background: #1d2a70;
+  transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+  background: transparent;
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 8px;
+
+  padding: 1rem 1.8rem;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
