@@ -1,6 +1,8 @@
 //src/components/home/Hero.jsx
 import hero from "../../assets/images/Hero.jpg";
 import "../../components/home/css/hero.css";
+import Button from "../common/estimatebutton/estimateButton";
+
 
 export default function Hero() {
   return (
@@ -18,7 +20,9 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <button className="primary-btn">Get a Free Estimate</button>
+            <Button>
+              Get a Free Estimate
+            </Button>
             <button className="secondary-btn">View Services</button>
           </div>
         </div>

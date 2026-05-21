@@ -1,0 +1,227 @@
+/* src/components/services/baththub/bathtub.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+.bathtub-hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.bathtub-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at right,
+      rgba(255,255,255,0.12),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+.bathtub-overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0.92) 28%,
+      rgba(255,255,255,0.55) 58%,
+      rgba(255,255,255,0.08) 100%
+    );
+}
+
+.bathtub-container {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.bathtub-content {
+  display: flex;
+  align-items: center;
+}
+
+.bathtub-text {
+  max-width: 720px;
+  padding-block: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.service-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(43, 59, 152, 0.08);
+  color: #2B3B98;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(6px);
+}
+
+.bathtub-text h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+  color: #2B3B98;
+  max-width: 700px;
+}
+
+.bathtub-text p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #4b5563;
+  max-width: 580px;
+  margin-bottom: 3rem;
+}
+
+.hero-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefit-item span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.benefit-item p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.bathtub-secondary-btn {
+  min-height: 58px;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid #2B3B98;
+  border-radius: 12px;
+  color: #2B3B98;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.bathtub-secondary-btn:hover {
+  background: #2B3B98;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+
+  .bathtub-overlay {
+    padding: 7rem 0;
+  }
+
+  .bathtub-text h1 {
+    font-size: clamp(3rem, 8vw, 4.8rem);
+    line-height: 1;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bathtub-hero,
+  .bathtub-overlay {
+    min-height: auto;
+  }
+
+  .bathtub-overlay {
+    padding: 5rem 0;
+  }
+
+  .bathtub-container {
+    padding-inline: 1.5rem;
+  }
+
+  .bathtub-text {
+    padding-block: 0;
+  }
+
+  .bathtub-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.05;
+    letter-spacing: -2px;
+  }
+
+  .bathtub-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .bathtub-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .service-badge {
+    font-size: 0.8rem;
+  }
+
+  .benefit-item {
+    align-items: flex-start;
+  }
+}

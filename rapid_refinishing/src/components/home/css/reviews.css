@@ -1,0 +1,76 @@
+/*src/components/home/css/whychoose.css*/
+.reviews {
+  padding: 2.5rem 4rem;
+  background: #ffffff;
+  border-top: 3px solid #2B3B98;
+  border-bottom: 3px solid #2B3B98;
+}
+
+.reviews-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+}
+
+/* Carousel Row */
+.reviews-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Arrow Buttons */
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: #2B3B98;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+.arrow-btn:hover {
+  color: #1a237e;
+}
+
+/* Quote + Name */
+.review-content {
+  flex: 1;
+  text-align: left;
+}
+
+.review-quote {
+  font-family: 'Outfit', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #4067B3;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.review-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #4067B3;
+  letter-spacing: 0.05em;
+}
+
+/* Circular Image */
+.review-image {
+  flex-shrink: 0;
+}
+
+.review-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;        
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+}

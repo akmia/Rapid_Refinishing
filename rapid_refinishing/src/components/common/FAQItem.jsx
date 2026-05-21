@@ -1,16 +1,16 @@
-//src/components/common/FAQItem.jsx
+// src/components/common/FAQItem.jsx
 import { useState } from "react";
 
 export default function FAQItem({ question, answer }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="faq-item">
-      <button onClick={() => setOpen(!open)}>
-        {question}
+    <div className={`faq-item ${open ? "open" : ""}`}>
+      <button className="faq-question" onClick={() => setOpen(!open)}>
+        <span>{question}</span>
+        <span className="faq-icon">{open ? "−" : "+"}</span>
       </button>
-
-      {open && <p>{answer}</p>}
+      {open && <p className="faq-answer">{answer}</p>}
     </div>
   );
 }

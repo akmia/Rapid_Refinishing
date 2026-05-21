@@ -1,0 +1,144 @@
+.bathtub-comparison-section {
+  padding: 7rem 0;
+  background: #ffffff;
+}
+
+.comparison-wrapper {
+  background: #2B3B98;
+  border-radius: 24px;
+  padding: 4rem 3rem;
+  overflow-x: auto;
+}
+
+.comparison-wrapper h2 {
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background: #f3f4f6;
+}
+
+.comparison-table th {
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2B3B98;
+  border-right: 1px solid #d1d5db;
+}
+
+.comparison-table th:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+.comparison-table td {
+  padding: 1.4rem 1.2rem;
+  border-top: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  vertical-align: top;
+}
+
+.comparison-table td:nth-child(2),
+.comparison-table td:nth-child(3) {
+  text-align: center;
+  font-weight: 700;
+  color: #2B3B98;
+}
+
+.comparison-table th:nth-child(3) {
+  background: #e8ebff;
+  color: #1f2f8f;
+  position: relative;
+}
+
+.comparison-table td:nth-child(3) {
+  background: #f4f6ff;
+  position: relative;
+}
+
+/* STRONGER TOTAL ROW */
+
+.highlight-row td:nth-child(3) {
+  background: #dfe5ff;
+  color: #1d2a70;
+  font-weight: 800;
+}
+
+.highlight-row td {
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+.benefit-column {
+  text-align: left !important;
+}
+
+.benefit-column ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.benefit-column li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #2B3B98;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+
+  .comparison-wrapper h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bathtub-comparison-section {
+    padding: 5rem 0;
+  }
+
+  .comparison-wrapper {
+    padding: 3rem 1.5rem;
+  }
+
+  .comparison-wrapper h2 {
+    font-size: 2.2rem;
+  }
+
+  .comparison-table {
+    min-width: 760px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .comparison-wrapper h2 {
+    font-size: 1.9rem;
+  }
+}

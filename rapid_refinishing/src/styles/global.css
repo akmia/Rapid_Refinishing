@@ -39,17 +39,6 @@ body {
   text-align: center;
 }
 
-.footer {
-  background: #f5f5f5;
-  padding: 60px 0;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
 @media (max-width: 768px) {
   .nav-links {
     display: none;

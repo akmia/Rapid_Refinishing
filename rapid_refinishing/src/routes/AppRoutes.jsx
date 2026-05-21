@@ -6,6 +6,8 @@ import Services from "../pages/Services/Services";
 import Gallery from "../pages/Gallery/Gallery";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import Bathtub from "../pages/Services/bathtub";
+
 
 export default function AppRoutes() {
   return (
@@ -15,6 +17,8 @@ export default function AppRoutes() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/services/bathtub" element={<Bathtub />} />
     </Routes>
   );
 }
+

@@ -1,0 +1,228 @@
+/* src/components/services/bathtub/css/bathtubbenefits.css */
+.bathtub-benefits-section {
+  padding: 7rem 0;
+
+  background: #f8f8f8;
+}
+
+.benefits-header {
+  margin-bottom: 3.5rem;
+}
+
+.benefits-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+
+  line-height: 1.05;
+  letter-spacing: -2px;
+
+  color: #2B3B98;
+
+  margin-bottom: 1rem;
+}
+
+.benefits-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  color: #374151;
+
+  max-width: 700px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+
+  margin-bottom: 4rem;
+}
+
+.benefit-card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 2rem;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.08);
+}
+
+.benefit-icon {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.benefit-icon.green {
+  background: rgba(22,163,74,0.12);
+  color: #16a34a;
+}
+
+.benefit-icon.blue {
+  background: rgba(43,59,152,0.10);
+  color: #2B3B98;
+}
+
+.benefit-icon.gray {
+  background: rgba(107,114,128,0.10);
+  color: #6b7280;
+}
+
+.benefit-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  color: #2B3B98;
+
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.7;
+
+  color: #4b5563;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 3rem;
+}
+
+.before-after-card {
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 6px 16px rgba(0,0,0,0.05);
+}
+
+.before-after-card img {
+  width: 100%;
+  height: 320px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.before-after-label {
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  padding: 1.2rem 1.4rem;
+}
+
+.before-after-label p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.status-dot.red {
+  background: #dc2626;
+}
+
+.status-dot.green {
+  background: #16a34a;
+}
+
+@media (max-width: 992px) {
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-header h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bathtub-benefits-section {
+    padding: 5rem 0;
+  }
+
+  .benefits-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .benefits-header p {
+    font-size: 1.1rem;
+  }
+
+  .before-after-card img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .benefits-header h2 {
+    font-size: 2rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .before-after-label p {
+    font-size: 1.1rem;
+  }
+}

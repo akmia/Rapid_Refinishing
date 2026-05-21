@@ -1,0 +1,100 @@
+/*src/components/home/css/whychoose.css*/
+.why-choose {
+  background-color: #2B3B98;
+  padding: 3rem 4rem;
+  color: #ffffff;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Text */
+.why-text h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+/* Benefits */
+.benefit {
+  margin-bottom: 1.5rem;
+}
+
+.benefit-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.checkmark {
+  background-color: #ffffff;
+  color: #2B3B98;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.benefit h4 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.benefit p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #dce3ff;
+  line-height: 1.6;
+  padding-left: 2rem;   
+}
+
+/* Before/After Images */
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ba-image {
+  position: relative;
+}
+
+.ba-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.ba-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2B3B98;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 1;
+}

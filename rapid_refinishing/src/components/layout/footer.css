@@ -2,73 +2,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Outfit:wght@600&display=swap');
 
 .footer {
-  background-color: #f9f9f9;
-  border-top: 1px solid #e0e0e0;
-  padding: 2rem 3rem;
+  background-color: #ffffff !important;
+  border-top: 3px solid #2B3B98;
+  padding: 1.5rem 2rem;
   font-size: 0.875rem;
-  color: #333;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 160px 2fr 1fr 1.5fr 1.5fr;
+  grid-template-columns: 150px 2fr 1fr 1.8fr 2fr; /* 👈 5 cols */
   gap: 2rem;
   align-items: start;
 }
 
-/* Logo */
+/* Col 1 - Logo */
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+
 .footer-logo img {
-  width: 120px;
+  width: 130px;
   object-fit: contain;
 }
 
-/* Columns */
+/* Titles */
 .footer-col h4 {
-  font-family: 'Outfit', sans-serif;   /* 👈 Outfit Semibold for titles */
+  font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  font-size: 0.9rem;
-  color: #111;
+  font-size: 0.85rem;
+  color: #888;                  /* 👈 gray like reference */
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .footer-subheading {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
+/* Lists */
 .footer-col ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 0.5rem;
+  margin: 0;
 }
 
 .footer-col ul li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
-.footer-col a {
-  font-family: 'Inter', sans-serif;    /* 👈 Inter Medium for body links */
+/* Links - blue */
+.footer-col ul li a,
+.footer-col p a {
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   text-decoration: none;
-  color: #333;
+  color: #2B3B98;               /* 👈 blue like reference */
 }
 
-.footer-col a:hover {
-  color: #2B3B98;
+.footer-col ul li a:hover,
+.footer-col p a:hover {
   text-decoration: underline;
 }
 
+/* Paragraph text */
 .footer-col p {
-  font-family: 'Inter', sans-serif;    /* 👈 Inter Medium for body text */
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   margin: 0.2rem 0;
-  color: #444;
+  color: #333;
 }
 
-/* Areas */
+/* Areas we serve */
 .footer-areas {
-  font-size: 0.8rem;
-  color: #555;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 0.25rem;
 }
 
 .footer-areas a {
@@ -78,8 +89,15 @@
 
 /* Map */
 .footer-map {
-  height: 180px;
-  border-radius: 8px;
+  height: 200px;
+  border-radius: 4px;
   overflow: hidden;
   border: 1px solid #ddd;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
 }

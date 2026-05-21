@@ -1,6 +1,6 @@
 // src/components/layout/Footer.jsx
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/rapid_logo.jpg"; 
+import logo from "../../assets/images/rapid_logo.jpg";
 import "../../components/layout/footer.css";
 
 export default function Footer() {
@@ -8,12 +8,12 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-grid">
 
-        {/* Col 1 - Logo */}
+        {/* Col 1 - Logo only */}
         <div className="footer-logo">
           <img src={logo} alt="Rapid Refinishing Co." />
         </div>
 
-        {/* Col 2 - Services */}
+        {/* Col 2 - Services + Areas */}
         <div className="footer-col">
           <h4>Services</h4>
           <ul>
@@ -30,7 +30,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Col 3 - Stone Colors & More */}
+        {/* Col 3 - Stone Colors + More */}
         <div className="footer-col">
           <h4>Stone Colors</h4>
           <ul>
@@ -44,13 +44,15 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Col 4 - Contact & Hours */}
+        {/* Col 4 - Contact + Hours */}
         <div className="footer-col">
           <h4>Contact us</h4>
           <p><a href="tel:6025709821">(602) 570-9821</a></p>
-          <p><a href="mailto:customerservice@rapidrefinishingco.com">
-            customerservice@rapidrefinishingco.com
-          </a></p>
+          <p>
+            <a href="mailto:customerservice@rapidrefinishingco.com">
+              customerservice@rapidrefinishingco.com
+            </a>
+          </p>
           <h4 className="footer-subheading">Working Hours</h4>
           <p>Monday - Saturday: 9:00am - 5:00pm</p>
           <p>(Phone until 4:30pm)</p>

@@ -1,0 +1,40 @@
+/* src/components/common/estimatebutton/estimateButton.css */
+.primary-btn {
+  background: #2B3B98;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 1rem 1.8rem;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+}
+
+.primary-btn:hover {
+  background: #1d2a70;
+  transform: translateY(-2px);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
