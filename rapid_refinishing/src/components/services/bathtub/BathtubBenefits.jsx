@@ -1,14 +1,8 @@
 //src/components/services/bathtub/BathtubBenefits.jsx
 import "./css/bathtubbenefits.css";
-
-import beforeImg from "../../../assets/images/bathtubbefore1.jpg";
-import afterImg from "../../../assets/images/bathtubafter1.jpg";
-
-import {
-  FaDollarSign,
-  FaClock,
-  FaTools,
-} from "react-icons/fa";
+import beforeImg from "../../../assets/images/bathtubbefore2.jpg";
+import afterImg from "../../../assets/images/bathtubafter2.jpg";
+import { FaDollarSign, FaClock, FaTools, } from "react-icons/fa";
 
 export default function BathtubBenefits() {
   return (

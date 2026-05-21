@@ -1,0 +1,257 @@
+.counter-benefits-section {
+  padding: 6rem 0;
+
+  background: #ffffff;
+}
+
+.counter-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.5rem;
+
+  margin-bottom: 2rem;
+}
+
+.counter-benefit-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  padding: 2rem 1.5rem;
+
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.counter-benefit-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.08);
+}
+
+.counter-benefit-icon {
+  font-size: 2rem;
+
+  color: #2B3B98;
+
+  margin-bottom: 1.2rem;
+}
+
+.counter-benefit-icon.green {
+  color: #16a34a;
+}
+
+.counter-benefit-icon.purple {
+  color: #7c3aed;
+}
+
+.counter-benefit-icon.gold {
+  color: #eab308;
+}
+
+.counter-benefit-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 0.6rem;
+}
+
+.counter-benefit-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  color: #6b7280;
+
+  line-height: 1.7;
+}
+
+/* FEATURED PRODUCT */
+
+.featured-product-card {
+  background: #2B3B98;
+
+  border-radius: 22px;
+
+  padding: 3rem;
+
+  color: white;
+
+  box-shadow:
+    0 12px 30px rgba(43,59,152,0.18);
+}
+
+.featured-top {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.featured-badge {
+  background: rgba(255,255,255,0.14);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  padding: 0.5rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.featured-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.featured-product-card h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+
+  margin-bottom: 1rem;
+
+  max-width: 700px;
+}
+
+.featured-product-card p {
+  max-width: 860px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,0.92);
+
+  margin-bottom: 2rem;
+}
+
+.featured-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem 2rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.feature-item svg {
+  color: white;
+}
+
+.spraystone-btn {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.8rem;
+
+  background: transparent;
+
+  border: 1.5px solid rgba(255,255,255,0.55);
+  border-radius: 10px;
+
+  padding: 1rem 1.4rem;
+
+  color: white;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.spraystone-btn:hover {
+  background: rgba(255,255,255,0.1);
+
+  border-color: white;
+
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+
+  .counter-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-product-card h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .counter-benefits-section {
+    padding: 5rem 0;
+  }
+
+  .counter-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-product-card {
+    padding: 2rem;
+  }
+
+  .featured-product-card h2 {
+    font-size: 2rem;
+  }
+
+  .featured-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .featured-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-product-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .featured-product-card p {
+    font-size: 1rem;
+  }
+}

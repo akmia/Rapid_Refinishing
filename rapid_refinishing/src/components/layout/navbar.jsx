@@ -35,8 +35,8 @@ export default function Navbar() {
             <div className="dropdown-menu">
               <Link to="/services">All Services</Link>
               <Link to="/services/bathtub">Bathtub Refinishing</Link>
-              <Link to="/services/countertops">Countertops</Link>
-              <Link to="/services/cabinets">Cabinet Refacing</Link>
+              <Link to="/services/counter">Countertops</Link>
+              <Link to="/services">Cabinet Refacing</Link>
             </div>
           )}
         </div>

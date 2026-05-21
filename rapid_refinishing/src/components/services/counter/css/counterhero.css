@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+.counter-hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.counter-overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.68) 12%,
+      rgba(0,0,0,0.42) 40%,
+      rgba(0,0,0,0.12) 100%
+    );
+}
+
+.counter-container {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+.counter-content {
+  width: 100%;
+  max-width: 720px;
+  margin-left: auto;
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  color: white;
+}
+
+.counter-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.08);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.counter-content h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(3.5rem, 6vw, 5.8rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -3px;
+  margin-bottom: 1.8rem;
+  max-width: 760px;
+}
+
+.counter-content p {
+  max-width: 520px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.92);
+  margin-bottom: 2.5rem;
+}
+
+.counter-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.counter-secondary-btn {
+  min-height: 44px;
+  padding: 1rem 1.8rem;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.75);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.counter-secondary-btn:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+
+  .counter-content {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .counter-content h1 {
+    font-size: clamp(3rem, 8vw, 4.6rem);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .counter-hero,
+  .counter-overlay {
+    min-height: auto;
+  }
+
+  .counter-overlay {
+    padding: 6rem 0;
+  }
+
+  .counter-container {
+    padding-inline: 1.5rem;
+  }
+
+  .counter-content {
+    max-width: 100%;
+  }
+
+  .counter-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.02;
+    letter-spacing: -2px;
+  }
+
+  .counter-content p {
+    font-size: 1rem;
+  }
+
+  .counter-actions {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .counter-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .counter-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .counter-badge {
+    font-size: 0.75rem;
+  }
+}

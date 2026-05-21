@@ -1,4 +1,5 @@
-//src/pages/Services/Services.jsx
+// src/pages/Services/Services.jsx
+
 import ServiceCard from "../../components/common/ServiceCard";
 
 import bathtub from "../../assets/images/bathtub.jpg";
@@ -11,18 +12,22 @@ export default function Services() {
     {
       title: "Bathtub & Shower Resurfacing",
       image: bathtub,
+      path: "/services/bathtub",
     },
     {
       title: "Countertops",
       image: counter,
+      path: "/services/counter",
     },
     {
       title: "Vanity & Sink Resurfacing",
       image: sink,
+      path: "/services/sink",
     },
     {
       title: "Cabinet Refacing",
       image: cabinet,
+      path: "/services/cabinet",
     },
   ];
 
@@ -37,6 +42,7 @@ export default function Services() {
               key={index}
               image={service.image}
               title={service.title}
+              to={service.path}
             />
           ))}
         </div>
