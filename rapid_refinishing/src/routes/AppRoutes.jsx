@@ -8,7 +8,7 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Bathtub from "../pages/Services/bathtub";
 import Counter from "../pages/Services/counter";
-
+import Cabinet from "../pages/Services/cabinet";
 
 export default function AppRoutes() {
   return (
@@ -20,7 +20,9 @@ export default function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/services/bathtub" element={<Bathtub />} />
       <Route path="/services/counter" element={<Counter />} />
+      <Route path="/services/cabinet" element={<Cabinet />} />
     </Routes>
   );
 }
+
 

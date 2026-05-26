@@ -1,0 +1,138 @@
+/* src/components/services/cabinet/css/cabinetProcess.css */
+
+.cabinet-process {
+  background: #2B3B98;
+  padding: 72px 0;
+}
+
+/* =========================
+   Header
+========================= */
+
+.process-label {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2B3B98;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+}
+
+.process-title {
+  color: #fff;
+
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+
+  margin-bottom: 12px;
+}
+
+.process-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  margin-bottom: 42px;
+}
+
+/* =========================
+   Grid
+========================= */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 90px;
+  row-gap: 34px;
+}
+
+/* =========================
+   Step
+========================= */
+
+.process-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.process-number {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #fff;
+  color: #2B3B98;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.process-content h3 {
+  color: #fff;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  margin-bottom: 6px;
+}
+
+.process-content p {
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+
+  max-width: 420px;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+  .process-grid {
+    column-gap: 40px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+  .cabinet-process {
+    padding: 60px 0;
+  }
+
+  .process-title {
+    font-size: 2rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+  }
+
+  .process-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .process-content p {
+    font-size: 0.9rem;
+  }
+}

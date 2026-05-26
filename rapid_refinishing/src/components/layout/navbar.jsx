@@ -34,9 +34,11 @@ export default function Navbar() {
           {servicesOpen && (
             <div className="dropdown-menu">
               <Link to="/services">All Services</Link>
-              <Link to="/services/bathtub">Bathtub Refinishing</Link>
+              <Link to="/services/bathtub">Bathtub & Shower Refinishing</Link>
               <Link to="/services/counter">Countertops</Link>
-              <Link to="/services">Cabinet Refacing</Link>
+              <Link to="/services/cabinet">Cabinet Resurfacing & Refacing</Link>
+              <Link to="/services/vanity">Vanity & Sink Resurfacing</Link>
+
             </div>
           )}
         </div>

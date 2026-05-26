@@ -1,0 +1,250 @@
+/* src/components/services/cabinet/css/cabinetHero.css */
+
+.cabinet-hero {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Background */
+
+.cabinet-hero__image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.cabinet-hero__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.72) 0%,
+    rgba(0,0,0,.50) 35%,
+    rgba(0,0,0,.18) 100%
+  );
+}
+
+/* Content */
+
+.cabinet-hero__content {
+  position: relative;
+  z-index: 5;
+
+  padding-top: 110px;
+  padding-bottom: 150px;
+}
+
+/* Badge */
+
+.cabinet-hero__badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: .55rem 1rem;
+
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.7);
+
+  backdrop-filter: blur(6px);
+
+  font-size: .85rem;
+  font-weight: 500;
+
+  margin-bottom: 1.5rem;
+}
+
+/* Heading */
+
+.cabinet-hero h1 {
+  max-width: 620px;
+
+  font-size: clamp(3rem, 5vw, 4.75rem);
+  line-height: 1.05;
+  font-weight: 800;
+
+  margin-bottom: 1rem;
+}
+
+/* Description */
+
+.cabinet-hero p {
+  max-width: 560px;
+
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  color: rgba(255,255,255,.92);
+
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+
+.cabinet-hero__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  margin-bottom: 3.5rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 54px;
+  padding: 0 1.5rem;
+
+  background: #fff;
+  color: #3450b8;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: .25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 54px;
+  padding: 0 1.5rem;
+
+  background: transparent;
+
+  border: 1px solid rgba(255,255,255,.7);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,.08);
+}
+
+/* Stats */
+
+.cabinet-hero__stats {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+
+.cabinet-hero__stats h3 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.cabinet-hero__stats span {
+  color: rgba(255,255,255,.85);
+}
+
+/* Features */
+
+.cabinet-hero__features {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+
+  padding: 18px 32px;
+
+  background: #f5f4ed;
+
+  border-top: 1px solid rgba(0,0,0,.06);
+
+  z-index: 10;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #3450b8;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+.feature-item svg {
+  color: #22c55e;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .cabinet-hero {
+    min-height: 720px;
+  }
+
+  .cabinet-hero__stats {
+    gap: 40px;
+  }
+
+  .cabinet-hero__features {
+    gap: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .cabinet-hero {
+    min-height: auto;
+  }
+
+  .cabinet-hero__content {
+    padding-top: 90px;
+    padding-bottom: 180px;
+  }
+
+  .cabinet-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .cabinet-hero p {
+    font-size: 1rem;
+  }
+
+  .cabinet-hero__stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .cabinet-hero__features {
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 16px 24px;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+}
