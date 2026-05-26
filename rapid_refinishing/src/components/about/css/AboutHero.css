@@ -1,0 +1,216 @@
+/* src/components/about/css/AboutHero.css */
+
+.about-hero {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+/* ==========================
+   Background Image
+========================== */
+
+.about-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* ==========================
+   Gradient Overlay
+========================== */
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(73, 84, 187, 0.88) 0%,
+      rgba(73, 84, 187, 0.82) 25%,
+      rgba(73, 84, 187, 0.60) 50%,
+      rgba(73, 84, 187, 0.28) 75%,
+      rgba(73, 84, 187, 0.05) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.10) 0%,
+      rgba(255,255,255,0) 40%
+    );
+}
+
+/* ==========================
+   Container
+========================== */
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-content {
+  max-width: 620px;
+
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+/* ==========================
+   Badge
+========================== */
+
+.about-badge {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+/* ==========================
+   Heading
+========================== */
+
+.about-hero h1 {
+  margin-bottom: 24px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+/* ==========================
+   Description
+========================== */
+
+.about-hero p {
+  max-width: 500px;
+
+  margin-bottom: 60px;
+
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color: rgba(255,255,255,.92);
+}
+
+/* ==========================
+   Stats
+========================== */
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+
+  max-width: 900px;
+}
+
+.about-stats div {
+  min-width: 0;
+}
+
+.about-stats h3 {
+  margin-bottom: 4px;
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+
+  color: #ffffff;
+}
+
+.about-stats span {
+  display: block;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: rgba(255,255,255,.9);
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (max-width: 992px) {
+  .about-hero-content {
+    max-width: 560px;
+
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: auto;
+  }
+
+  .about-hero-content {
+    max-width: 100%;
+
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-hero p {
+    margin-bottom: 40px;
+
+    font-size: 0.95rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-stats h2 {
+    font-size: 2rem;
+  }
+
+  .about-stats span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

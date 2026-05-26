@@ -1,11 +1,13 @@
 // src/pages/About/About.jsx
+
+import AboutHero from "../../components/about/AboutHero";
+import AboutContent from "../../components/about/AboutContent";
+
 export default function About() {
   return (
-    <section className="section-spacing">
-      <div className="container">
-        <h2 className="section-title">About Us</h2>
-        <p>We are a professional refinishing company.</p>
-      </div>
-    </section>
+    <>
+      <AboutHero />
+      <AboutContent />
+    </>
   );
 }
