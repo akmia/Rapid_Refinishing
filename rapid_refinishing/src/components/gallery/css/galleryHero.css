@@ -1,0 +1,16 @@
+/* src/components/gallery/css/galleryHero.css */
+
+.gallery-hero {
+  background: #3147a7;
+  padding: 18px 0;
+}
+
+.gallery-hero h1 {
+  color: white;
+
+  text-align: center;
+
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+}

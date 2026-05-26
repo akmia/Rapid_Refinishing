@@ -1,5 +1,6 @@
 // src/components/services/cabinet/VanityCTA.jsx
 import "./css/vanityCTA.css";
+import EstimateButton from "../../common/estimatebutton/estimateButton";
 
 export default function VanityCTA() {
   return (
@@ -15,9 +16,9 @@ export default function VanityCTA() {
             refinishing over replacement.
           </p>
 
-          <button>
+          <EstimateButton>
             Get a Free Estimate
-          </button>
+          </EstimateButton>
         </div>
       </div>
     </section>

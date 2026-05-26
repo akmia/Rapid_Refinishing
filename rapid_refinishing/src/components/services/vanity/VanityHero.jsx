@@ -1,6 +1,7 @@
 // src/components/services/vanity/VanityHero.jsx
 import "./css/vanityHero.css";
 import vanityHero from "../../../assets/images/vanityHero.jpg";
+import EstimateButton from "../../common/estimatebutton/estimateButton";
 
 export default function VanityHero() {
   return (
@@ -32,9 +33,9 @@ export default function VanityHero() {
           Built to last for years.
         </p>
 
-        <button className="vanity-primary-btn">
-          Get a Free Estimate
-        </button>
+        <EstimateButton>
+          <span className="vanity-primary-btn-text">Get a Free Estimate</span>
+        </EstimateButton>
       </div>
     </section>
   );
