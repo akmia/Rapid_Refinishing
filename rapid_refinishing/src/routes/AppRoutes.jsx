@@ -9,6 +9,7 @@ import Contact from "../pages/Contact/Contact";
 import Bathtub from "../pages/Services/bathtub";
 import Counter from "../pages/Services/counter";
 import Cabinet from "../pages/Services/cabinet";
+import Vanity from "../pages/Services/vanity";
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/services/bathtub" element={<Bathtub />} />
       <Route path="/services/counter" element={<Counter />} />
       <Route path="/services/cabinet" element={<Cabinet />} />
+      <Route path="/services/vanity" element={<Vanity />} />
     </Routes>
   );
 }

@@ -22,7 +22,7 @@ export default function Services() {
     {
       title: "Vanity & Sink Resurfacing",
       image: sink,
-      path: "/services/sink",
+      path: "/services/vanity",
     },
     {
       title: "Cabinet Refacing",
