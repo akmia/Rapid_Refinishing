@@ -33,6 +33,11 @@ body {
   padding-inline: 2rem;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: 430px 1fr;
+}
+
 /* ===================================
    Common Section Spacing
 =================================== */

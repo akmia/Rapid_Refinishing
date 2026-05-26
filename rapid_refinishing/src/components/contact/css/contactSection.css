@@ -1,0 +1,21 @@
+/* src/components/contact/css/contactSection.css */
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+
+  max-width: 1280px;
+  margin: 0 auto;
+
+  border-top: 3px solid #3147a7;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

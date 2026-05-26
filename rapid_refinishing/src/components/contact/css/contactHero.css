@@ -1,0 +1,47 @@
+/* src/components/contact/css/contactHero.css */
+
+.contact-hero {
+  background: #3147a7;
+}
+
+.contact-hero-content {
+  padding: 80px 0;
+  max-width: 720px;
+}
+
+.contact-badge {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #fff;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.contact-hero h1 {
+  margin-bottom: 16px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #fff;
+}
+
+.contact-hero p {
+  max-width: 520px;
+
+  color: rgba(255,255,255,.95);
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+@media (max-width:768px) {
+  .contact-hero-content {
+    padding: 60px 0;
+  }
+}

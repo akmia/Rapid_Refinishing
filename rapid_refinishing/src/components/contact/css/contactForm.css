@@ -1,0 +1,152 @@
+/* src/components/contact/css/contactForm.css */
+
+.contact-form-wrapper {
+  background: #eef0ff;
+
+  padding: 56px;
+
+  height: 100%;
+}
+
+.contact-form-wrapper h2 {
+  margin-bottom: 10px;
+
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  color: #3147a7;
+}
+
+.contact-form-wrapper p {
+  margin-bottom: 40px;
+
+  color: #4f5fb2;
+  font-size: 1rem;
+}
+
+.contact-form label {
+  display: block;
+
+  margin-bottom: 8px;
+  margin-top: 22px;
+
+  color: #3147a7;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  border: 1px solid #7c8cff;
+  border-radius: 18px;
+
+  background: white;
+
+  padding: 14px 18px;
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+
+  border-radius: 12px;
+}
+
+/* SERVICE BUTTONS */
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 10px;
+}
+
+.service-tags button {
+  border: 1px solid #7c8cff;
+  border-radius: 999px;
+
+  background: white;
+
+  padding: 8px 14px;
+
+  color: #3147a7;
+  font-size: .9rem;
+
+  cursor: pointer;
+}
+
+/* UPLOAD BOX */
+
+.upload-box {
+  margin-top: 18px;
+
+  border: 1px dashed #b9b9b9;
+  border-radius: 14px;
+
+  background: #f7f5f3;
+
+  text-align: center;
+
+  padding: 40px 20px;
+}
+
+.upload-box p {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: #666;
+  font-size: .9rem;
+}
+
+/* SUBMIT */
+
+.submit-btn {
+  width: 100%;
+
+  margin-top: 24px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #3147a7;
+  color: white;
+
+  padding: 14px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .contact-form-wrapper {
+    padding: 32px 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
