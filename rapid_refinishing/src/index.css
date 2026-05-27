@@ -102,31 +102,4 @@ code {
   background: var(--code-bg);
 }
 
-.intro-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: #000;
-  display: flex;
-}
 
-.intro-overlay video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.skip-btn {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-
-  padding: 12px 24px;
-  border: none;
-  border-radius: 999px;
-
-  background: white;
-  color: black;
-  cursor: pointer;
-  font-weight: 600;
-}
