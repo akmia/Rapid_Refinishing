@@ -42,9 +42,9 @@ export default function CabinetHero() {
             (602) 975-7963 — Call now
           </a>
 
-          <button className="btn-secondary">
+          <a className="btn-secondary" href="/gallery#cabinet">
             See our work
-          </button>
+          </a>
         </div>
 
         <div className="cabinet-hero__stats">
@@ -66,26 +66,26 @@ export default function CabinetHero() {
       </div>
 
       <div className="cabinet-hero__features">
-        <div className="feature-item">
-            <ShieldCheck size={18} />
-            <span>Licensed & insured</span>
+        <div className="cabinet-feature-item">
+          <ShieldCheck size={18} />
+          <span>Licensed & insured</span>
         </div>
 
-        <div className="feature-item">
-            <Clock3 size={18} />
-            <span>Most jobs in 2–3 days</span>
+        <div className="cabinet-feature-item">
+          <Clock3 size={18} />
+          <span>Most jobs in 2–3 days</span>
         </div>
 
-        <div className="feature-item">
-            <MapPin size={18} />
-            <span>Serving Greater Phoenix area</span>
+        <div className="cabinet-feature-item">
+          <MapPin size={18} />
+          <span>Serving Greater Phoenix area</span>
         </div>
 
-        <div className="feature-item">
-            <BadgeCheck size={18} />
-            <span>Locally owned since 2010</span>
+        <div className="cabinet-feature-item">
+          <BadgeCheck size={18} />
+          <span>Locally owned since 2010</span>
         </div>
-        </div>
+      </div>
     </section>
   );
 }

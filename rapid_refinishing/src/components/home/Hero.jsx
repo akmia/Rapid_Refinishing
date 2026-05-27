@@ -2,6 +2,7 @@
 import hero from "../../assets/images/Hero.jpg";
 import "../../components/home/css/hero.css";
 import Button from "../common/estimatebutton/estimateButton";
+import { Link } from "react-router-dom";
 
 
 export default function Hero() {
@@ -20,10 +21,10 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <Button>
-              Get a Free Estimate
-            </Button>
-            <button className="secondary-btn">View Services</button>
+            <Button>Get a Free Estimate</Button>
+            <Link to="/services" className="secondary-btn">
+              View Services
+            </Link>
           </div>
         </div>
       </div>

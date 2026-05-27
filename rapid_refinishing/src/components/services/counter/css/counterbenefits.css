@@ -1,26 +1,20 @@
 .counter-benefits-section {
   padding: 6rem 0;
-
   background: #ffffff;
 }
 
 .counter-benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   gap: 1.5rem;
-
   margin-bottom: 2rem;
 }
 
 .counter-benefit-card {
-  background: white;
-
+  background: #FAF9F7;
   border: 1px solid #e5e7eb;
   border-radius: 18px;
-
   padding: 2rem 1.5rem;
-
   box-shadow:
     0 2px 6px rgba(0,0,0,0.04);
 
@@ -38,9 +32,7 @@
 
 .counter-benefit-icon {
   font-size: 2rem;
-
   color: #2B3B98;
-
   margin-bottom: 1.2rem;
 }
 
@@ -60,9 +52,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-
-  color: #111827;
-
+  color: #000000;
   margin-bottom: 0.6rem;
 }
 
@@ -70,9 +60,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
-
-  color: #6b7280;
-
+  color: #626262;
   line-height: 1.7;
 }
 
@@ -80,13 +68,9 @@
 
 .featured-product-card {
   background: #2B3B98;
-
   border-radius: 22px;
-
   padding: 3rem;
-
   color: white;
-
   box-shadow:
     0 12px 30px rgba(43,59,152,0.18);
 }
@@ -94,21 +78,15 @@
 .featured-top {
   display: flex;
   align-items: center;
-
   gap: 1rem;
-
   margin-bottom: 1.8rem;
 }
 
 .featured-badge {
   background: rgba(255,255,255,0.14);
-
   border: 1px solid rgba(255,255,255,0.2);
-
   padding: 0.5rem 0.9rem;
-
   border-radius: 999px;
-
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
@@ -124,74 +102,61 @@
   font-family: 'Outfit', sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
-
   line-height: 1.05;
   letter-spacing: -1.5px;
-
   margin-bottom: 1rem;
-
   max-width: 700px;
 }
 
 .featured-product-card p {
   max-width: 860px;
-
   font-family: 'Inter', sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
-
   line-height: 1.9;
-
   color: rgba(255,255,255,0.92);
-
   margin-bottom: 2rem;
 }
 
 .featured-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   gap: 1rem 2rem;
-
   margin-bottom: 2.5rem;
 }
 
 .feature-item {
   display: flex;
   align-items: center;
-
   gap: 0.8rem;
-
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .feature-item svg {
-  color: white;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.feature-item span {
+  color: #ffffff !important;
 }
 
 .spraystone-btn {
   display: inline-flex;
   align-items: center;
-
   gap: 0.8rem;
-
   background: transparent;
-
   border: 1.5px solid rgba(255,255,255,0.55);
   border-radius: 10px;
-
   padding: 1rem 1.4rem;
-
   color: white;
-
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
-
   cursor: pointer;
-
   transition:
     background 0.25s ease,
     transform 0.25s ease,
@@ -200,9 +165,7 @@
 
 .spraystone-btn:hover {
   background: rgba(255,255,255,0.1);
-
   border-color: white;
-
   transform: translateY(-2px);
 }
 

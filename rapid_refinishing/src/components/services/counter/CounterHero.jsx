@@ -32,9 +32,13 @@ export default function CounterHero() {
 
             <div className="counter-actions">
 
-              <button className="counter-secondary-btn">
+              <a
+                className="counter-secondary-btn"
+                href="/gallery#counter"
+              >
                 See our work
-              </button>
+              </a>
+
 
               <Button>
                 Get a Free Estimate

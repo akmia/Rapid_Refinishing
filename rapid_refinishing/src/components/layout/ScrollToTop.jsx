@@ -6,14 +6,9 @@ export default function ScrollToTop() {
   const isFirstRender = useRef(true);
 
   useEffect(() => {
-    // Avoid forcing scroll on initial mount.
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [location.pathname, location.search, location.hash]);
+
 
   return null;
 }

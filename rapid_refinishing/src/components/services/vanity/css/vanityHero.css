@@ -121,10 +121,10 @@
 }
 
 /* =========================
-   CTA Button
+   UNIVERSAL PRIMARY BUTTON
 ========================= */
 
-.vanity-primary-btn {
+.primary-btn {
   width: fit-content;
 
   height: 52px;
@@ -132,29 +132,42 @@
   padding: 0 28px;
 
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 
   background: #3147a8;
-  color: #fff;
+  color: #ffffff;
 
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
 
   cursor: pointer;
 
   box-shadow:
-    0 8px 18px rgba(49, 71, 168, 0.25);
+    0 10px 24px rgba(49, 71, 168, 0.28);
 
   transition:
-    transform .25s ease,
-    box-shadow .25s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
-.vanity-primary-btn:hover {
+.primary-btn:hover {
   transform: translateY(-2px);
 
+  background: #2a3d96;
+
   box-shadow:
-    0 12px 24px rgba(49, 71, 168, 0.35);
+    0 14px 30px rgba(49, 71, 168, 0.38);
+}
+
+/* BUTTON TEXT */
+
+.vanity-primary-btn-text {
+  color: #ffffff;
+
+  font-size: 0.92rem;
+  font-weight: 700;
 }
 
 /* =========================
@@ -208,7 +221,7 @@
     font-size: 1rem;
   }
 
-  .vanity-primary-btn {
+  .primary-btn {
     width: 100%;
   }
 }

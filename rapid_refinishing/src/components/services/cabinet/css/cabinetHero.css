@@ -1,5 +1,6 @@
 /* src/components/services/cabinet/css/cabinetHero.css */
 
+
 .cabinet-hero {
   position: relative;
   min-height: 760px;
@@ -183,18 +184,22 @@
   z-index: 10;
 }
 
-.feature-item {
+.cabinet-feature-item {
   display: flex;
   align-items: center;
   gap: 10px;
 
-  color: #3450b8;
+  color: #2B3B98;
   font-size: .95rem;
   font-weight: 500;
 }
 
-.feature-item svg {
+.cabinet-feature-item svg {
   color: #22c55e;
+}
+
+.cabinet-feature-item span {
+  color: #2B3B98;
 }
 
 /* Tablet */

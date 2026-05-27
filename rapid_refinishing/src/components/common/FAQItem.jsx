@@ -10,7 +10,11 @@ export default function FAQItem({ question, answer }) {
         <span>{question}</span>
         <span className="faq-icon">{open ? "−" : "+"}</span>
       </button>
-      {open && <p className="faq-answer">{answer}</p>}
+
+      {/* IMPORTANT: always render, don't conditionally remove */}
+      <div className={`faq-answer-wrapper ${open ? "open" : ""}`}>
+        <p className="faq-answer">{answer}</p>
+      </div>
     </div>
   );
 }

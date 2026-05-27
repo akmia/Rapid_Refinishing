@@ -54,9 +54,13 @@ export default function BathtubHero() {
                 Get a Free Estimate
               </Button>
 
-              <button className="bathtub-secondary-btn">
+              <a
+                className="bathtub-secondary-btn"
+                href="/gallery#bathroom"
+              >
                 View Gallery
-              </button>
+              </a>
+
 
             </div>
 
