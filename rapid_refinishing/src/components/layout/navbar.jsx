@@ -1,11 +1,15 @@
 // src/components/layout/Navbar.jsx
-import { Link } from "react-router-dom";
+
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import logo from "../../assets/images/rapid_logo.jpg"; 
+import logo from "../../assets/images/rapid_logo.jpg";
 import "./navbar.css";
 
 export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
+
+  const navLinkClass = ({ isActive }) =>
+    isActive ? "nav-link active-link" : "nav-link";
 
   return (
     <nav className="navbar">
@@ -19,7 +23,10 @@ export default function Navbar() {
 
       {/* Center - Nav Links */}
       <div className="nav-links">
-        <Link to="/">Home</Link>
+
+        <NavLink to="/" className={navLinkClass}>
+          Home
+        </NavLink>
 
         {/* Services Dropdown */}
         <div
@@ -33,29 +40,81 @@ export default function Navbar() {
 
           {servicesOpen && (
             <div className="dropdown-menu">
-              <Link to="/services">All Services</Link>
-              <Link to="/services/bathtub">Bathtub & Shower Refinishing</Link>
-              <Link to="/services/counter">Countertops</Link>
-              <Link to="/services/cabinet">Cabinet Resurfacing & Refacing</Link>
-              <Link to="/services/vanity">Vanity & Sink Resurfacing</Link>
+
+              <NavLink
+                to="/services"
+                className={navLinkClass}
+              >
+                All Services
+              </NavLink>
+
+              <NavLink
+                to="/services/bathtub"
+                className={navLinkClass}
+              >
+                Bathtub & Shower Refinishing
+              </NavLink>
+
+              <NavLink
+                to="/services/counter"
+                className={navLinkClass}
+              >
+                Countertops
+              </NavLink>
+
+              <NavLink
+                to="/services/cabinet"
+                className={navLinkClass}
+              >
+                Cabinet Resurfacing & Refacing
+              </NavLink>
+
+              <NavLink
+                to="/services/vanity"
+                className={navLinkClass}
+              >
+                Vanity & Sink Resurfacing
+              </NavLink>
 
             </div>
           )}
         </div>
 
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/contact">Contact Us</Link>
+        <NavLink
+          to="/gallery"
+          className={navLinkClass}
+        >
+          Gallery
+        </NavLink>
+
+        <NavLink
+          to="/about"
+          className={navLinkClass}
+        >
+          About Us
+        </NavLink>
+
+        <NavLink
+          to="/contact"
+          className={navLinkClass}
+        >
+          Contact Us
+        </NavLink>
+
       </div>
 
       {/* Right - Contact Info */}
       <div className="navbar-contact">
-        <a href="tel:6025709821">(602) 570-9821</a>
+
+        <a href="tel:6025709821">
+          (602) 570-9821
+        </a>
 
         <a href="mailto:customerservice@rapidrefinishingco.com">
-            customerservice@rapidrefinishingco.com
+          customerservice@rapidrefinishingco.com
         </a>
-    </div>
+
+      </div>
 
     </nav>
   );

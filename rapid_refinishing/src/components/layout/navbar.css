@@ -1,3 +1,5 @@
+/* src/components/layout/navbar.css */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -31,24 +33,67 @@
   gap: 2rem;
 }
 
-.nav-links a,
-.dropdown-trigger {
+/* MAIN NAV LINKS */
+.nav-link {
+  position: relative;
   text-decoration: none;
   color: #2B3B98;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.dropdown-trigger:hover {
+/* Hover color */
+.nav-link:hover {
   color: #1d2a70;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #2B3B98;
+  transition: width 0.3s ease;
+}
+
+/* Hover underline */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE PAGE */
+.active-link {
+  color: #1d2a70;
+}
+
+/* KEEP UNDERLINE ON ACTIVE PAGE */
+.active-link::after {
+  width: 100%;
 }
 
 /* DROPDOWN */
 .dropdown {
   position: relative;
+}
+
+.dropdown-trigger {
+  position: relative;
+  color: #2B3B98;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-trigger:hover {
+  color: #1d2a70;
 }
 
 .dropdown-menu {
@@ -73,6 +118,8 @@
 .dropdown-menu a {
   padding: 0.7rem 1rem;
   font-size: 0.88rem;
+  text-decoration: none;
+  color: #2B3B98;
 }
 
 .dropdown-menu a:hover {
