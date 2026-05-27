@@ -41,12 +41,15 @@ export default function RapidRefinishingLoader({ onFinish }) {
       <video
         ref={videoRef}
         autoPlay
-        muted
         playsInline
+        muted
         className="w-full h-full object-cover"
       >
         <source
-          src={new URL("../../assets/videos/rapid.mp4", import.meta.url).toString()}
+          src={new URL(
+            "../../assets/videos/rapid.mp4",
+            import.meta.url
+          ).toString()}
           type="video/mp4"
         />
       </video>
