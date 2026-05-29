@@ -68,6 +68,7 @@
 
 .featured-product-card {
   background: #2B3B98;
+  grid-column: 1 / -1;
   border-radius: 22px;
   padding: 3rem;
   color: white;
